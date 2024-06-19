@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Booking Form</title>
+</head>
+<body>
+    <form>
+        <h2>Online Booking Form</h2>
+        <p>To reserve seats please complete and submit the booking form.</p><hr>
+        <label>Full Name *</label><br><br>
+        <input type="text" required>
+        <input type="text" required>
+        <br><br>
+            <label for="mail">E-mail *</label><br><br>
+            <input type="email" name="mail" id="mail">
+            <br><br>
+            <label for="phone">Phone Number *</label><br><br>
+            <input type="number" name="phone" id="phone"><br><br>
+            <label for="time">Departure Date/Time *</label>
+            <input type="date">
+            <input type="time" name="time" id="time">
+            <select name="hours" id="hours">
+                <option value="hours">AM</option>
+                <option value="hours">PM</option>
+            </select>
+            <br><br>
+            <label for="time">Return Date/Time *</label>
+            <input type="date" name="time" id="time">
+            <input type="time" name="time" id="time">
+            <select name="hours" id="hours">
+                <option value="hours">AM</option>
+                <option value="hours">PM</option>
+            </select>
+            <br><br>
+            <label for="address">Pickup Address *</label><br>
+            <textarea name="address" id="address" cols="40" rows="10"></textarea>
+            <br><br>
+            <label for="address">Destination Address *</label><br>
+            <textarea name="address" id="address" cols="40" rows="10"></textarea>
+            <br><br>
+            <label for="passengers">Number of Passengers *</label>
+            <input type="number" name="passengers" id="passengers">
+            <br><br>
+            <label for="journey">Journey Type *</label>
+            <select name="journey" id="journey">
+                <option value="journey" disabled>Please Select</option>
+                <option value="journey">One-Way</option>
+                <option value="journey">Return</option>
+                </select>
+                <br><br>
+                <label for="message">Additional Message</label><br><br>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <br><br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+             </form>
+</body>
+</html>
